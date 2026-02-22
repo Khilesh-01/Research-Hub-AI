@@ -15,10 +15,8 @@
 |    Field |                                         Sample Details  |      
 | --- | --- |
 | Product Name | ResearchHub AI 
-| Version | 1.0 |
 | Date | February 21, 2026 |
-| Product Manager | Khilesh Chaudhari (khilesh.chaudhari23@vit.edu) |
-| Team | Engineering: Full-Stack Team (React + FastAPI), AI/ML: LLM & RAG Engineers, DevOps: Cloud & Security |
+| Team | Khilesh Chaudhari
 | Objective | Automate research paper discovery, organization, and contextual analysis using Agentic AI |
 | Value Proposition | Reduces literature review time by 60–70% via AI-powered synthesis and contextual querying |
 | Target Audience | Academic Researchers, PhD Scholars, Research Labs, University Faculty, R&D Teams |
