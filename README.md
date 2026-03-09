@@ -3,11 +3,11 @@
 **Intelligent Research Paper Management and Analysis System using Agentic AI**
 
 > Discover, import, organise, and converse with academic papers using Groq Llama 3.3, pgvector, and Retrieval-Augmented Generation.
->
-> Demo Video Link:
-> [Research Hub AI](URLhttps://drive.google.com/drive/folders/1dtP_hYTk2EhyX53hVI8JPOODynaniFVu)
 
----
+
+
+Demo Video Link:
+[Research Hub AI](URLhttps://drive.google.com/drive/folders/1dtP_hYTk2EhyX53hVI8JPOODynaniFVu)
 
 ## Architecture Overview
 
