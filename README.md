@@ -7,7 +7,7 @@
 
 
 Demo Video Link:
-[Research Hub AI](URLhttps://drive.google.com/drive/folders/1dtP_hYTk2EhyX53hVI8JPOODynaniFVu)
+[Research Hub AI](https://drive.google.com/drive/folders/1dtP_hYTk2EhyX53hVI8JPOODynaniFVu)
 
 ## Architecture Overview
 
