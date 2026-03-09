@@ -3,6 +3,9 @@
 **Intelligent Research Paper Management and Analysis System using Agentic AI**
 
 > Discover, import, organise, and converse with academic papers using Groq Llama 3.3, pgvector, and Retrieval-Augmented Generation.
+>
+> Demo Video Link:
+> [Research Hub AI](URLhttps://drive.google.com/drive/folders/1dtP_hYTk2EhyX53hVI8JPOODynaniFVu)
 
 ---
 
@@ -29,18 +32,18 @@ port 5432           (768-dim embeddings)    temperature 0.3
 
 ## Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 18 + TypeScript + Tailwind CSS |
-| Backend | FastAPI + Uvicorn |
-| AI / LLM | Groq — `llama-3.3-70b-versatile` |
-| Embeddings | Sentence Transformers `all-mpnet-base-v2` (768 dim) |
-| Database | PostgreSQL 16 (pgvector extension) |
-| ORM | SQLAlchemy 2 |
-| Migrations | Alembic |
-| Auth | Passlib bcrypt + python-jose JWT |
-| External APIs | arXiv API · PubMed E-utilities |
-| Container | Docker + Docker Compose |
+| Layer         | Technology                                            |
+| ------------- | ----------------------------------------------------- |
+| Frontend      | React 18 + TypeScript + Tailwind CSS                  |
+| Backend       | FastAPI + Uvicorn                                     |
+| AI / LLM      | Groq —`llama-3.3-70b-versatile`                    |
+| Embeddings    | Sentence Transformers `all-mpnet-base-v2` (768 dim) |
+| Database      | PostgreSQL 16 (pgvector extension)                    |
+| ORM           | SQLAlchemy 2                                          |
+| Migrations    | Alembic                                               |
+| Auth          | Passlib bcrypt + python-jose JWT                      |
+| External APIs | arXiv API · PubMed E-utilities                       |
+| Container     | Docker + Docker Compose                               |
 
 ---
 
@@ -132,6 +135,7 @@ docker compose up -d
 ```
 
 Verify at: http://localhost:8080 (Adminer)
+
 - System: PostgreSQL
 - Server: db
 - Username: Smartbridge
@@ -210,21 +214,21 @@ Frontend: http://localhost:3000
 
 ## API Reference
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /auth/register | Register new user |
-| POST | /auth/login | Login (returns JWT) |
-| GET | /auth/me | Get current user |
-| GET | /papers/search | Search arXiv/PubMed |
-| POST | /papers/import | Import paper to DB |
-| POST | /papers/{id}/process-embeddings | Generate vector embeddings |
-| POST | /workspaces/ | Create workspace |
-| GET | /workspaces/ | List user workspaces |
-| GET | /workspaces/{id}/papers | List papers in workspace |
-| POST | /workspaces/{id}/notes | Create note |
-| POST | /chat/session | Create chat session |
-| POST | /chat/query | Send RAG query to AI |
-| GET | /chat/messages/{session_id} | Get chat history |
+| Method | Endpoint                        | Description                |
+| ------ | ------------------------------- | -------------------------- |
+| POST   | /auth/register                  | Register new user          |
+| POST   | /auth/login                     | Login (returns JWT)        |
+| GET    | /auth/me                        | Get current user           |
+| GET    | /papers/search                  | Search arXiv/PubMed        |
+| POST   | /papers/import                  | Import paper to DB         |
+| POST   | /papers/{id}/process-embeddings | Generate vector embeddings |
+| POST   | /workspaces/                    | Create workspace           |
+| GET    | /workspaces/                    | List user workspaces       |
+| GET    | /workspaces/{id}/papers         | List papers in workspace   |
+| POST   | /workspaces/{id}/notes          | Create note                |
+| POST   | /chat/session                   | Create chat session        |
+| POST   | /chat/query                     | Send RAG query to AI       |
+| GET    | /chat/messages/{session_id}     | Get chat history           |
 
 ---
 
@@ -288,10 +292,10 @@ Return answer + source paper titles
 
 ## Troubleshooting
 
-| Issue | Fix |
-|-------|-----|
-| `GROQ_API_KEY not set` | Add key to `backend/.env` |
-| `vector type does not exist` | Run `docker compose up -d` first |
-| `Connection refused :5432` | Ensure Docker Desktop is running |
-| No embeddings / chat gives generic answers | Click ⚡ Embed on each paper |
-| Frontend blank page | Run `npm install` in the `frontend/` directory |
+| Issue                                      | Fix                                                |
+| ------------------------------------------ | -------------------------------------------------- |
+| `GROQ_API_KEY not set`                   | Add key to `backend/.env`                        |
+| `vector type does not exist`             | Run `docker compose up -d` first                 |
+| `Connection refused :5432`               | Ensure Docker Desktop is running                   |
+| No embeddings / chat gives generic answers | Click ⚡ Embed on each paper                       |
+| Frontend blank page                        | Run `npm install` in the `frontend/` directory |
